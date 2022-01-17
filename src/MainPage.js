@@ -1,7 +1,7 @@
 import TreeTwo from './components/treeStructure/Expander'
 import options from './components/JSON/treeData'
 
-function App() {
+function MainPage() {
   return (
     <div className="App">
       <TreeTwo options={options.data} />
@@ -13,4 +13,4 @@ function App() {
   );
 }
 
-export default App;
+export default MainPage;
