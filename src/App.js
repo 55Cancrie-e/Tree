@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import TreeTwo from './components/treeStructure/Expander'
+import options from './components/JSON/treeData'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TreeTwo options={options.data} />
+     <div>
+       <div>The yellow color indicates the elements with nesting </div>
+       <div>Green indicates elements without nesting </div>
+    </div>
     </div>
   );
 }
